@@ -1,0 +1,313 @@
+
+@font-face {
+    font-family:'Kraash';
+    src: url('fonts/Kraash.ttf'); 
+}
+@font-face {
+    font-family:'Kraash Black';
+    src: url('fonts/Kraash Black.ttf'); 
+}
+
+@font-face {
+    font-family:'SIMPLICITY PERSONALUSE';
+    src: url('fonts/SIMPLICITY PERSONALUSE.ttf'); 
+}
+@font-face {
+    font-family:'Sweet Cake';
+    src: url('fonts/Sweet Cake.otf'); 
+}
+
+
+
+
+
+/*header*/
+
+/*banner*/
+header .background-image{
+    width:100%;
+    margin-top: -2%;
+    animation: opacity-background 2s ease-in-out;
+}
+
+
+
+/*opacity*/
+
+@keyframes opacity-background {
+    from,
+    60% {
+      opacity: 0;
+    }
+    80% {
+        opacity: 0.5;
+      }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+@media screen and (max-width:320px){
+    header .background-image {
+        height:5vh;
+    }
+}
+
+@media screen and (min-width:768px){
+    header.background-image{
+        height:50vh;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .background-image{
+        height:80vh;
+
+    }
+}
+
+@media screen and (min-width:1050px){
+    .background-image{
+        height:105vh;
+
+    }
+}
+
+
+
+/*header
+
+
+
+
+
+     
+/* parte principal*/
+.main{
+display: flex;
+justify-content: center;
+text-align: center;
+ }
+
+.title{
+    font-family: 'SIMPLICITY PERSONALUSE';
+    font-size:120px;
+    color: rgb(255, 0, 0);
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+ }
+
+
+ /*spin*/
+ .main-img{
+    animation: spin 3s linear;
+   }
+
+   @keyframes spin {
+    0% {
+     transform: rotateZ(180deg);
+    }
+    100% {
+     transform: rotateZ(360deg);
+    }
+   }
+
+
+
+   /*swing*/
+   .swing:hover
+   {
+           -webkit-animation: swing 1s ease;
+           animation: swing 1s ease;
+           -webkit-animation-iteration-count: 1;
+           animation-iteration-count: 1;
+   }
+
+   @-webkit-keyframes swing
+   {
+       15%
+       {
+           -webkit-transform: translateX(5px);
+           transform: translateX(5px);
+       }
+       30%
+       {
+           -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+       } 
+       50%
+       {
+           -webkit-transform: translateX(3px);
+           transform: translateX(3px);
+       }
+       65%
+       {
+           -webkit-transform: translateX(-3px);
+           transform: translateX(-3px);
+       }
+       80%
+       {
+           -webkit-transform: translateX(2px);
+           transform: translateX(2px);
+       }
+       100%
+       {
+           -webkit-transform: translateX(0);
+           transform: translateX(0);
+       }
+   }
+   @keyframes swing
+   {
+       15%
+       {
+           -webkit-transform: translateX(5px);
+           transform: translateX(5px);
+       }
+       30%
+       {
+           -webkit-transform: translateX(-5px);
+           transform: translateX(-5px);
+       }
+       50%
+       {
+           -webkit-transform: translateX(3px);
+           transform: translateX(3px);
+       }
+       65%
+       {
+           -webkit-transform: translateX(-3px);
+           transform: translateX(-3px);
+       }
+       80%
+       {
+           -webkit-transform: translateX(2px);
+           transform: translateX(2px);
+       }
+       100%
+       {
+           -webkit-transform: translateX(0);
+           transform: translateX(0);
+       }
+   }
+
+
+
+
+.esp{
+    font-family:'Kraash Black';
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+    flex-direction: column;
+ }
+
+ @media screen and (min-width:768px){
+   .esp{
+        font-size:15px;
+        flex-direction: row;
+
+    }
+}
+
+@media screen and (min-width:1024px){
+    .esp{
+         font-size: 20px;
+ 
+     }
+ }
+ 
+
+
+
+ .sinopse{
+    color:rgb(255, 255, 0);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px; 
+    border-top: 10px;
+ }
+
+ .div-sinopse{
+   margin-top:2%;
+   padding: 3%;
+ }
+
+ .img-ex{
+   display: flex;
+
+  }
+
+  @media screen and (min-width:320px){
+    .img-ex{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+}
+
+@media screen and (min-width:1024px){
+    .img-ex{
+        flex-direction: row;
+        
+
+    }
+}
+
+.opçoes{
+    background-image: linear-gradient(1000deg, rgba(5, 3, 3, 0.788) 100%, transparent), url(img/york-wallcoverings-wallpaper-dy0270-64_1000.jpg);
+    background-attachment: local;
+    background-repeat: repeat;
+    height: 140vh;
+    margin-top: 0px; 
+    margin-left: 0px;
+    margin-right: 0px;
+ }
+
+.main-img{
+    display: flex;
+    justify-content: left;
+    margin-top: -100px;
+
+ }
+
+
+ /*zoom*/
+ .img-scale {
+    overflow: hidden;
+  }
+  
+  .img-scale img {
+    transition: transform 1s;
+    will-change: transform
+  }
+  
+  .img-scale img:hover {
+    transform: scale(1.2);
+  }
+
+
+  /*foco*/
+  .blur {
+    filter: blur(1px);
+    transition: filter 1s;
+  }
+  
+  .blur:hover {
+    filter: blur(0px);
+  }
+
+
+
+/* parte principal*/
+
+
+
+/*footer*/
+
+
+
+
+

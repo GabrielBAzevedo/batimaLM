@@ -1,0 +1,237 @@
+
+@font-face {
+    font-family:'Kraash';
+    src: url('fonts/Kraash.ttf'); 
+}
+@font-face {
+    font-family:'Kraash Black';
+    src: url('fonts/Kraash Black.ttf'); 
+}
+
+@font-face {
+    font-family:'SIMPLICITY PERSONALUSE';
+    src: url('fonts/SIMPLICITY PERSONALUSE.ttf'); 
+}
+@font-face {
+    font-family:'Sweet Cake';
+    src: url('fonts/Sweet Cake.otf'); 
+}
+
+
+
+
+
+/*header*/
+
+
+.title{
+    font-family: 'Kraash';
+    font-size:70px;
+    color:rgb(255, 255, 0);
+
+}
+
+
+header .background-image{
+    width:100%;
+    margin-top: -2%;
+    animation: opacity-background 2s ease-in-out;
+}
+
+@keyframes opacity-background {
+    from,
+    60% {
+      opacity: 0;
+    }
+    80% {
+        opacity: 0.5;
+      }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+@media screen and (max-width:320px){
+    header .background-image {
+        height:5vh;
+    }
+}
+
+@media screen and (min-width:768px){
+    header.background-image{
+        height:50vh;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .background-image{
+        height:80vh;
+
+    }
+}
+
+@media screen and (min-width:1050px){
+    .background-image{
+        height:105vh;
+
+    }
+}
+
+
+
+/*header
+
+
+
+
+
+     
+/* parte principal*/
+
+.a{
+    text-decoration: none;
+    color: rgb(251, 255, 0);
+}
+
+
+
+.opçoes{
+    background-image: linear-gradient(1000deg, rgba(5, 3, 3, 0.788) 100%, transparent), url(img/york-wallcoverings-wallpaper-dy0270-64_1000.jpg);
+    background-attachment: local;
+    background-repeat: repeat;
+    height: 140vh;
+    margin-top: 0px; 
+    margin-left: 0px;
+    margin-right: 0px;
+ }
+
+
+
+.title-1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3px;
+    margin-left:25%;
+    font-size: 200px;
+    font-family: 'SIMPLICITY PERSONALUSE';
+    color: rgb(255, 0, 0);
+}
+
+section {
+    display: flex;
+    justify-content: space-between;  
+}
+
+
+
+main .section-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -15%;
+
+}
+
+  @media screen and (min-width: 1024px) {
+    main .section-main{
+        flex-direction:row;  
+      
+    }
+  }
+
+
+
+
+
+.ul-dc{
+    list-style: none;
+    font-size: 45px;
+    font-weight: 900;
+    color: rgb(251, 255, 0);
+    
+}
+
+.ul-marvel{
+    list-style: none;
+    font-size: 45px;
+    font-weight: 900;
+    color: rgb(251, 255, 0);
+}
+
+
+.dc{
+    font-size: 35px;
+    font-family: 'Kraash Black';
+
+}
+
+
+.marvel{
+    font-size: 35px;
+    font-family: 'Kraash Black'
+}
+/* parte principal*/
+
+
+
+/*footer*/
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 35% 35%;
+    grid-gap: 2em;
+    margin-left: 10%;
+  }
+
+  .img-scale {
+    overflow: hidden;
+  }
+  
+  .img-scale img {
+    transition: transform 1s;
+    will-change: transform
+  }
+  
+  .img-scale img:hover {
+    transform: scale(1.2);
+  }
+
+.p-int{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'SIMPLICITY PERSONALUSE';
+    color: rgb(251, 255, 0)
+}
+
+.form{
+    display: flex;
+    margin-left: 70%;
+    font-size: 40px;
+    font-family: 'SIMPLICITY PERSONALUSE';
+    color: rgb(251, 255, 0);
+    text-decoration: none;
+    flex-direction: row;
+}
+
+.facebook{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 150px;
+    margin-left: 12%;
+    grid-gap: 1rem;    
+}
+
+.p-int-1{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'SIMPLICITY PERSONALUSE';
+    color: rgb(251, 255, 0);
+
+}
